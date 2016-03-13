@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="gitlab"
+           fetch="ssh://git@gitlab.com" />
+
+  <remote  name="github"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="pure"
+           fetch="https://github.com/PureNexusProject/" /> 
+
+
+  <remove-project groups="pdk,darwin" name="platform/prebuilts/clang/darwin-x86/host/3.6" path="prebuilts/clang/darwin-x86/host/3.6" revision="3c60fb5744ce4fbde988fbc24e38a8d9e5a58e59" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" revision="3344adbe898ae092b7bcc7c1f69d89980e39cbf2" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/darwin-x86/arm/arm-eabi-4.8" revision="6d08ca9f45ff685648fd13c75bf5cac4b11c19bb" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin,arm" name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" revision="7a80f8db4e0bd43e2ef53515cdb8f117cc65e9e0" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/headers" path="prebuilts/gcc/darwin-x86/host/headers" revision="4ac4f7cc41cf3c9e36fc3d6cf37fd1cfa9587a68" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin" name="platform/prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" path="prebuilts/gcc/darwin-x86/host/i686-apple-darwin-4.2.1" revision="8834958755acc291d126ba7ee38ac731d04f9c9e" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin,mips" name="platform/prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" path="prebuilts/gcc/darwin-x86/mips/mips64el-linux-android-4.9" revision="c66f0d207f430da9b45df9b3f1cc52af225d305c" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk,darwin,x86" name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" revision="ba8d2d6a9c96e1b17103c6bbf854cfce4b4803d3" upstream="LA.BF.1.1.3_rb1.9"/>
+
+
+  <!-- remove un-needed -->
+  <remove-project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="12ec1c696e8ecd699526cdf2aab8b6331efe19c4" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="kernel/msm" path="kernel" revision="f57415605d3b69657e300be46571c0ca5c39bf19" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/vendor/qcom-opensource/kernel/kernel-tests" path="vendor/qcom/opensource/kernel-tests" revision="cf01c5759d58ac49cc4b1098705a009a56f718af" upstream="LA.BF.1.1.3_rb1.9"/>
+
+
+  <!-- Start PureNexus Project-->
+
+  <!-- Pure Repo's -->
+
+  <remove-project groups="pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="b4b2895a994631ace609b61e1e1acadea3af79fd" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/external/chromium-webview" path="external/chromium-webview" revision="151bd4e4f4008e3e2e56e6ae8f50f557ffd486aa" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/Browser" path="packages/apps/Browser" revision="ec090f9c44460676cc5760c309cbee0eba92de9a" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/ContactsCommon" path="packages/apps/ContactsCommon" revision="1725df6a3dc13bf5671baa39d6818ba32485bf39" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="bd51a791d89f5b6e983d08951a490f435956bc77" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="e7b12ff4c0d50d03663ac26547774827d55b050e" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="b136db3c58a8afff06dbb1b48b05036f131ff5a8" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="e11db053b52061943e33d4749b2e126c0b6a142f" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="d46afe0970c096a16c09c69499f15aa060602e19" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="d278b2d8538a22cc063ebc68ffe5c141f29465e5" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="4f0ebc24208ce0447872fa2bf25e604299beeae8" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk-cw-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="d511d5dbd3a4547ab65f7ba7a36dc50754b8cb38" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk-cw-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="c10c883ad4655ef421215f080dc3bdea29402003" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/system/extras" path="system/extras" revision="9e403fb877fde60d7e628a6ec99a89853e621f77" upstream="LA.BF.1.1.3_rb1.9"/>
+  
+
+  <project path="external/busybox" name="android_external_busybox" remote="pure" revision="mm" />
+  <project path="external/chromium-webview" name="external_chromium-webview" remote="pure" revision="mm" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" groups="pdk" remote="pure" revision="mm" />
+  <project path="external/exfat" name="android_external_exfat" remote="pure" revision="mm" />
+  <project path="external/fuse" name="android_external_fuse" remote="pure" revision="mm" />
+  <project path="external/google" name="android_external_google" remote="pure" revision="mm" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="pure" revision="mm" />
+  <project path="frameworks/opt/cards" name="android_frameworks_opt_cards" remote="pure" revision="mm" />
+  <project path="packages/apps/Browser" name="android_packages_apps_Browser" groups="pdk-fs" remote="pure" revision="mm" />
+  <project path="packages/apps/ContactsCommon" name="android_packages_apps_ContactsCommon" groups="pdk-fs" remote="pure" revision="mm" />
+  <project path="packages/apps/Contacts" name="android_packages_apps_Contacts" groups="pdk-fs" remote="pure" revision="mm" />
+  <project path="packages/apps/ExactCalculator" name="android_packages_apps_ExactCalculator" groups="pdk-fs" remote="pure" revision="mm" />
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="pure" revision="mm" />
+  <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="pure" revision="mm" />
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="pure" revision="mm" />
+  <project path="packages/apps/PureNexusSettings" name="android_packages_apps_PureNexusSettings" remote="pure" revision="mm" />
+  <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" groups="generic_fs" remote="pure" revision="mm" />
+  <project path="packages/apps/WallpaperPicker" name="packages_apps_WallpaperPicker" remote="pure" revision="mm" />
+  <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="pure" revision="mm" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs" remote="pure" revision="mm" />
+  <project path="packages/providers/MediaProvider" name="android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="pure" revision="mm" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="pure" revision="mm" />
+
+  <!-- Merge PureNexus + CAF -->
+
+  <remove-project groups="pdk-cw-fs" name="platform/frameworks/base" path="frameworks/base" revision="505e84eef71e8f262c6e3cd40d950a9a3fa6a696" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/build" path="build" revision="ae93d030f4120ca55664e8c1703eee86b705e985" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/external/sepolicy" path="external/sepolicy" revision="471b458553794ae15ba60a3f30c26264d09bd508" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/frameworks/av" path="frameworks/av" revision="df69bdc01d8baee6a6b528ee50478b6e311be6ce" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/frameworks/native" path="frameworks/native" revision="d91a4d05e9463e7a96ed7d6a17cd37234672d76a" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="8802a9e2ca58fe2ac30248f87766a12305e04df0" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/system/core" path="system/core" revision="a763d5a47a056df163d7bed490e22232dc896b1f" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="pdk" name="platform/system/vold" path="system/vold" revision="7771c28ff988c90796402f21b532572995ee5a97" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="qcom,default" name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="023eb0ede1b3e820770c16b1c291aadfb978282c" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project groups="qcom,default" name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="2a304f2362a41017dfe91255d221186182436a81" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="device/qcom/common" revision="fc34fb7bae3c288d291096f1302734feda9905c2" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="device/qcom/sepolicy" revision="0e2cfb90ec14882590bc27b92e3c4b9dd6dccf65" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="5ed205c0ac45876a957bf112b27a0477fbad5e30" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="ba6a328a18bdebdcb41a84d8cad02513dfc14395" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/InCallUI" path="packages/apps/InCallUI" revision="a2d0f1da10fda9ebcaa37e01bbc1126317429c97" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="b50c0c6469ee527e2881e2a2e7eba9ae1983e062" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="7c9c526256c9ee8cdf3b1aa95ea571f9c08e9280" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="37fe3b048d917654cd9484a109d13d4a1f366fa3" upstream="LA.BF.1.1.3_rb1.9"/>
+  <remove-project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="68ab86d7abd2b1dd3085b5c12be3415ed4355c18" upstream="LA.BF.1.1.3_rb1.9"/>
+
+  <project path="frameworks/base" name="audahadi/android_frameworks_base" remote="github" revision="pn-caf-msm8974" />
+  <project path="frameworks/opt/telephony" name="audahadi/android_frameworks_opt_telephony" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/apps/CellBroadcastReceiver" name="audahadi/android_packages_apps_CellBroadcastReceiver" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/apps/Dialer" name="audahadi/android_packages_apps_Dialer" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/apps/InCallUI" name="audahadi/android_packages_apps_InCallUI" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/apps/Settings" name="audahadi/android_packages_apps_Settings" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/providers/TelephonyProvider" name="audahadi/android_packages_providers_TelephonyProvider" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/services/Telecomm" name="audahadi/android_packages_services_Telecomm" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/services/Telephony" name="audahadi/android_packages_services_Telephony" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="github" revision="pn-caf-msm8974" />
+
+  <project path="frameworks/av" name="audahadi/android_frameworks_av" remote="github" revision="pn-caf-msm8974" />
+  <project path="frameworks/native" name="audahadi/android_frameworks_native" remote="github" revision="pn-caf-msm8974" />
+  <project path="build" name="audahadi/android_build" remote="github" revision="pn-caf-msm8974" />
+  <project path="system/core" name="audahadi/android_system_core" remote="github" revision="pn-caf-msm8974" />
+  <project path="system/vold" name="audahadi/android_system_vold" remote="github" revision="pn-caf-msm8974" />
+  <project name="audahadi/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="pn-caf-msm8974"/>
+  <project name="audahadi/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="pn-caf-msm8974"/>
+  <project path="external/sepolicy" name="audahadi/android_external_sepolicy" remote="github" revision="pn-caf-msm8974" />
+
+  <remove-project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="bcb344ff6e07920734d812511d0adc7ee9d781bd" upstream="LA.BF.1.1.3_rb1.9"/>
+  <project name="sultanxda/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="cm-13.0-caf" remote="github" />
+
+
+  <!-- DEvice -->
+  <project name="audahadi/android_device_qcom_common" path="device/qcom/common" remote="github" revision="m-aosp" />
+  <project name="audahadi/android_device_qcom_sepolicy" path="device/qcom/sepolicy" remote="github" revision="m-aosp" />
+  <project name="audahadi/android_device_xiaomi_dior" path="device/xiaomi/dior" remote="github" revision="m-aosp" />
+  <project name="audahadi/android_device_xiaomi_cancro" path="device/xiaomi/cancro" remote="github" revision="m-aosp" />
+
+
+
+  <!-- Device Kernel -->
+  <project name="kernel-hut/android_kernel_xiaomi_cancro" path="kernel/xiaomi/cancro" remote="github" revision="mashmellow" />
+  <project name="kernel-hut/android_kernel_xiaomi_dior" path="kernel/xiaomi/dior" remote="github" revision="m-aosp" />
+  <project name="kernel-hut/android_kernel_xiaomi_dior" path="kernel/xiaomi/dior-exp" remote="github" revision="LA.BF.1.1.3_rb1.9" />
+
+  <!-- Device Vendor -->
+  <project name="audahadi/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="github" revision="m-aosp" />
+
+  <!-- PureNexus Vendor -->
+  <project path="vendor/nexus" name="audahadi/android_vendor_nexus" remote="github" revision="pn-caf-msm8974" />
+
+
+</manifest>
