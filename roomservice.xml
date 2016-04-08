@@ -63,6 +63,7 @@
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="pure" revision="mm" />
   <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" groups="pdk-fs" remote="pure" revision="mm" />
   <project path="packages/apps/PureNexusSettings" name="android_packages_apps_PureNexusSettings" remote="pure" revision="mm" />
+  <project path="packages/apps/PureSettings" name="android_packages_apps_PureSettings" remote="pure" revision="mm" />
   <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" groups="generic_fs" remote="pure" revision="mm" />
   <project path="packages/apps/WallpaperPicker" name="packages_apps_WallpaperPicker" remote="pure" revision="mm" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="pure" revision="mm" />
@@ -92,6 +93,8 @@
   <remove-project name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="37fe3b048d917654cd9484a109d13d4a1f366fa3" upstream="LA.BF.1.1.3_rb1.9"/>
   <remove-project name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="68ab86d7abd2b1dd3085b5c12be3415ed4355c18" upstream="LA.BF.1.1.3_rb1.9"/>
 
+  <remove-project groups="pdk-cw-fs" name="platform/external/lzma" path="external/lzma" revision="b473eaa2840cccf2fef15d53f00bccf92c41b615" upstream="LA.BF.1.1.3_rb1.11"/>
+
   <project path="frameworks/base" name="audahadi/android_frameworks_base" remote="github" revision="pn-caf-msm8974" />
   <project path="frameworks/opt/telephony" name="audahadi/android_frameworks_opt_telephony" remote="github" revision="pn-caf-msm8974" />
   <project path="packages/apps/CellBroadcastReceiver" name="audahadi/android_packages_apps_CellBroadcastReceiver" remote="github" revision="pn-caf-msm8974" />
@@ -101,7 +104,7 @@
   <project path="packages/providers/TelephonyProvider" name="audahadi/android_packages_providers_TelephonyProvider" remote="github" revision="pn-caf-msm8974" />
   <project path="packages/services/Telecomm" name="audahadi/android_packages_services_Telecomm" remote="github" revision="pn-caf-msm8974" />
   <project path="packages/services/Telephony" name="audahadi/android_packages_services_Telephony" remote="github" revision="pn-caf-msm8974" />
-  <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" remote="github" revision="pn-caf-msm8974" />
+  <project path="packages/apps/PackageInstaller" name="audahadi/android_packages_apps_PackageInstaller" remote="github" revision="pn-caf-msm8974" />
 
   <project path="frameworks/av" name="audahadi/android_frameworks_av" remote="github" revision="pn-caf-msm8974" />
   <project path="frameworks/native" name="audahadi/android_frameworks_native" remote="github" revision="pn-caf-msm8974" />
@@ -111,6 +114,8 @@
   <project name="audahadi/android_hardware_qcom_audio" path="hardware/qcom/audio" remote="github" revision="pn-caf-msm8974"/>
   <project name="audahadi/android_hardware_qcom_bt" path="hardware/qcom/bt" remote="github" revision="pn-caf-msm8974"/>
   <project path="external/sepolicy" name="audahadi/android_external_sepolicy" remote="github" revision="pn-caf-msm8974" />
+
+  <project name="audahadi/android_external_lzma" path="external/lzma" remote="github" revision="pn-caf-msm8974"/>
 
   <remove-project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="bcb344ff6e07920734d812511d0adc7ee9d781bd" upstream="LA.BF.1.1.3_rb1.9"/>
   <project name="sultanxda/android_packages_apps_SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="cm-13.0-caf" remote="github" />
